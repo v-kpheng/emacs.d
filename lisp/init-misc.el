@@ -49,5 +49,14 @@
 (add-auto-mode 'conf-mode "^Procfile\\'")
 
 
+(defun toggle-fullscreen ()
+  "M-Enter toggles fullscreen"
+  (interactive)
+  (set-frame-parameter nil 'fullscreen (if (frame-parameter nil 'fullscreen)
+                                           nil
+                                         'fullboth)))
+(global-set-key [(meta return)] 'toggle-fullscreen)
+
+
 (provide 'init-misc)
 ;;; init-misc.el ends here
