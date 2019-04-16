@@ -50,7 +50,7 @@
 
 
 (defun toggle-fullscreen ()
-  "M-Enter toggles fullscreen; ya!"
+  "M-Enter toggles fullscreen; ya; ya!"
   (interactive)
   (set-frame-parameter nil 'fullscreen (if (frame-parameter nil 'fullscreen)
                                            nil
