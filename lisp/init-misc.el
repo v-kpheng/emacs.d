@@ -57,6 +57,10 @@
                                          'fullboth)))
 (global-set-key [(meta return)] 'toggle-fullscreen)
 
+;;; M-o enables ace-window
+(global-set-key (kbd "M-o") 'ace-window)
+(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+
 
 (provide 'init-misc)
 ;;; init-misc.el ends here
