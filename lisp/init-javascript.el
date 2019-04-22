@@ -92,7 +92,8 @@
 
 (when (maybe-require-package 'add-node-modules-path)
   (after-load 'typescript-mode
-    (add-hook 'typescript-mode-hook 'add-node-modules-path))
+    (add-hook 'typescript-mode-hook 'add-node-modules-path)
+    (setq-default typescript-indent-level 2))
   (after-load 'js2-mode
     (add-hook 'js2-mode-hook 'add-node-modules-path)))
 
