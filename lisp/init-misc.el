@@ -63,6 +63,9 @@
 (global-set-key (kbd "M-o") 'ace-window)
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
+;;; C-x f find files in repo directory
+(global-set-key (kbd "C-x f") 'find-file-in-repository)
+
 
 (provide 'init-misc)
 ;;; init-misc.el ends here
