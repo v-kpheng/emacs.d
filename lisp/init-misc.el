@@ -66,6 +66,9 @@
 ;;; C-x f find files in repo directory
 (global-set-key (kbd "C-x f") 'find-file-in-repository)
 
+;;; Set font size
+(set-face-attribute 'default nil :height 200)
+
 
 (provide 'init-misc)
 ;;; init-misc.el ends here
